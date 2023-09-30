@@ -1,0 +1,29 @@
+{
+	"name": "eca-framework",
+	"version": "0.1.1",
+	"scripts": {
+		"pretest": "tsc --project tests --outDir dist-root",
+		"test": "mocha --async-only --bail --ui qunit dist-root/tests",
+		"postinstall": "tsc --project source --outDir dist"
+	},
+	"dependencies": {
+		"@angular/core": "2.0.0-rc.5",
+		"@types/node": "6.0",
+		"co-body": "^6.1.0",
+		"continuation-local-storage": "3.2",
+		"is-my-json-valid": "^2.20.6",
+		"json-schema-ref-parser": "^9.0.9",
+		"koa": "^2.14.2",
+		"koa-route": "3.2",
+		"lodash": "4.17.21",
+		"reflect-metadata": "0.1"
+	},
+	"devDependencies": {
+		"@types/chai": "3.4",
+		"@types/lodash": "^4.14.112",
+		"@types/mocha": "2.2",
+		"chai": "3.5",
+		"mocha": "^10.2.0",
+		"typescript": "^2.8.4"
+	}
+}
